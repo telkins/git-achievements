@@ -2,6 +2,7 @@
 <title>Rob Walsh's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Cherry Picker</title><description>Used git cherry-pick to add a sha from another branch into the current branch.</description></item>
 <item><title>Author (Level 5)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Librarian</title><description>Looked for change that introduce or remove a string with git log -S</description></item>
 <item><title>Apprentice Banker (Level 2)</title><description>Join two or more development histories together with git merge.</description></item>
@@ -21,5 +22,4 @@
 <item><title>Apprentice Cathedral Worker (Level 3)</title><description>Cloned submodule repository and checked out commits specified by superproject.</description></item>
 <item><title>Apprentice Historian (Level 3)</title><description>Investigate the commit log using git log.</description></item>
 <item><title>Apprentice Socialite (Level 2)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Apprentice Author (Level 2)</title><description>Made 2^Level commits using git commit.</description></item>
 </channel></rss>
