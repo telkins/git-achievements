@@ -360,7 +360,7 @@ function check_for_achievements
 
 function link_to_git_docs
 {
-    sed -e 's_git \([a-z0-9-]*\)_<a href="http://schacon.github.com/git/git-\1.html">git-\1</a>_g' | sed -e 's/\/git-hooks/\/githooks/g'
+    sed -e 's_git \([a-z0-9-]*\)_<a href="//schacon.github.com/git/git-\1.html">git-\1</a>_g' | sed -e 's/\/git-hooks/\/githooks/g'
 }
 
 function clean_logged_achievements() {
@@ -384,7 +384,7 @@ function publish_achievements
 
     cd "${git_achievements_dir}"
 
-    user=`git config --global user.name`
+    user='Brombomb'
 
 echo "
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -394,11 +394,13 @@ echo "
 <title>${user}'s Git Achievements</title>
 <link rel=\"alternate\" type=\"application/rss+xml\" title=\"rss feed\" href=\"index.rss\"/>
 <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"/>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 </head>
 <body>
 " > index.html
     mailhash=`git config --global user.email | xargs echo -n | tr '[A-Z]' '[a-z]' | openssl md5 | sed -e 's/.* //'`
-    echo "<h2>${user}'s Git Achievements <img src='http://www.gravatar.com/avatar/${mailhash}'/></h2>" >> index.html
+    echo "<h2>${user}'s Git Achievements</h2>" >> index.html
 
     # STATS
     cat git-achievements | grep 'unlock_achievement ' | grep -v ' sed ' | grep -v '\${' | sed -e 's/.*unlock_achievement //g' -e 's/^"//g' -e 's/"$//g' -e 's/\$power/X/g' -e 's/\$count/X/g' -e 's/\$hooks/X/g' | sort | awk -F"\" \"" '{ print "<li><div class=\"title\">" $1 "</div><div class=\"info\">" $2 "</div></li>" }' | link_to_git_docs > all.html
@@ -408,7 +410,7 @@ echo "
     levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
     onelevels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | wc -l`
     let points="${levels}"+"${onelevels}"
-    echo "Unlocked ${unlockedCount}/$total <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a> for $points points<br>" >> index.html
+    echo "&laquo; Unlocked ${unlockedCount}/$total &sect; $points points &raquo;<br>" >> index.html
 
     unlocked=`cat "${ACHIEVEMENTSLOGFILE}" | grep Unlocked | wc -l`
 
@@ -420,9 +422,9 @@ echo "
 
     # Git Commands
     echo 'Git commands sorted by usage:' >> index.html
-    echo "<pre style=\"text-align: left\">" >> index.html
+    echo "<cite>" >> index.html
     cat  "${ACTIONLOGFILE}" | grep -v Date | grep -v 'git-dir' | awk '{ print $1 }' | sort | uniq -c | sort -nr >> index.html
-    echo "</pre>" >> index.html
+    echo "</cite>" >> index.html
 
     # Locked Achievements
     echo "<script type=\"text/javascript\">
@@ -449,6 +451,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     rm temp.html
     rm all.html
 
+    echo '<br />Thanks to <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a>' >> index.html
     echo "</body></html>" >> index.html
 
     # Update the RSS feed
