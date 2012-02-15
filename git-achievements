@@ -410,7 +410,7 @@ echo "
     levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
     onelevels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | wc -l`
     let points="${levels}"+"${onelevels}"
-    echo "&laquo; Unlocked ${unlockedCount}/$total &sec; $points points &raquo;<br>" >> index.html
+    echo "&laquo; Unlocked ${unlockedCount}/$total &sect; $points points &raquo;<br>" >> index.html
 
     unlocked=`cat "${ACHIEVEMENTSLOGFILE}" | grep Unlocked | wc -l`
 
