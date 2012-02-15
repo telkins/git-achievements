@@ -451,7 +451,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     rm temp.html
     rm all.html
 
-    echo '<br />Thanks to <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a>'
+    echo '<br />Thanks to <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a>' >> index.html
     echo "</body></html>" >> index.html
 
     # Update the RSS feed
