@@ -1,0 +1,55 @@
+author.png - GPL - Gnome Project
+coin.png - GPL v2 - Hylke
+sweep.png - GPL - Oliver Scholtz (and others)
+worker.png - CC A-SA 3 - Hbons
+baptised.png - CC A 3 - Yusuke Kamiyamane
+historian - GPL - Gnome Project
+socialite - CC A-SA 3 - Aha-soft
+librarian - Free - Sibcode
+student.png - free personal - Iconshock
+homeowner.png - Free personal - Custom Icon Design
+architect.png - free personal - Iconshock
+archivist.png - GPL - Oliver Scholtz (and others)
+blacksmith.png - CC A 3 - Yusuke Kamiyamane
+butcher.png - GPL v2 - Hylke
+cathedral.png - free personal - Icons Land
+collector.png - CC A-SA 3 - David Ferreira
+delivery.png - free personal - Iconshock
+dentist.png - free personal - Iconshock
+fisherman.png - LGPL - Everaldo Coelho
+inventor.png - LGPL - Everaldo Coelho
+goldsmith.png - CC A-NC 3 - Visual Pharm
+investigator.png - free - Turbomilk - http://turbomilk.com/
+locksmith.png - free non-com - Newidols.ru
+merchant.png - free personal - Iconshock
+messenger.png - CC A-SA 3 - Aha-soft
+pedantic.png - GPL - Gnome Project
+plumber.png  - GPL - Oliver Scholtz (and others)
+postman.png - LGPL - Everaldo Coelho
+presenter.png  - GPL - Oliver Scholtz (and others)
+seamstress.png - free personal - Iconshock
+traveler.png - free com - Freeiconsweb
+webdesigner.png - free personal - Icons Land
+treetrimmer.png - free non-com - FastIcon
+stamp collector.png  - GPL - Oliver Scholtz (and others)
+star.png  - CC A 3 - Yusuke Kamiyamane
+
+Cleaning Lady
+Product Manager
+Stone Mason
+Cherry Picker
+Beach lion
+caretaker
+gardner
+gipsy
+hunter
+let there be light
+miller
+news reader
+pilgrim
+thug
+weaver - free personal - Custom Icon Design
+
+
+
+
