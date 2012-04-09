@@ -2,6 +2,7 @@
 <title>Brombomb's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Socialite (Level 6)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Stone Mason (Level 5)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 <item><title>Apprentice Pedantic (Level 1)</title><description>Use the flow extension to encourage an orderly and standardized branching model</description></item>
 <item><title>Master Cathedral Worker (Level 8)</title><description>Cloned submodule repository and checked out commits specified by superproject.</description></item>
@@ -21,5 +22,4 @@
 <item><title>Apprentice Cleaning lady (Level 3)</title><description>Remove untracked files from the working tree with git clean</description></item>
 <item><title>Apprentice Gipsy (Level 2)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
 <item><title>Apprentice Gipsy (Level 1)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Apprentice Gardner (Level 1)</title><description>Shows the commit ancestry graph with git show-branch</description></item>
 </channel></rss>
