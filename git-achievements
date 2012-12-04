@@ -454,6 +454,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     rm temp.html
     rm all.html
 
+    echo '<br /><a href="http://brombomb.github.com/git-achievements">Brombomb''s Git Achievements</a>' >> index.html
     echo '<br />Thanks to <a href="http://github.com/icefox/git-achievements">Git Achievements</a>' >> index.html
     echo "</body></html>" >> index.html
 
