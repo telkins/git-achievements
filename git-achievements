@@ -384,7 +384,7 @@ function publish_achievements
 
     cd "${git_achievements_dir}"
 
-    user='Brombomb'
+    user='Travis Elkins'
 
 echo "
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -412,6 +412,7 @@ echo "
     levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
     onelevels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | wc -l`
     let points="${levels}"+"${onelevels}"
+    echo "&laquo; Since December 4, 2012 &raquo;<br>" >> index.html
     echo "&laquo; Unlocked ${unlockedCount}/$total &sect; $points points &raquo;<br>" >> index.html
 
     unlocked=`cat "${ACHIEVEMENTSLOGFILE}" | grep Unlocked | wc -l`
